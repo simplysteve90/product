@@ -43,7 +43,7 @@ public class ProductController {
 	public ModelAndView editProductForm(@RequestParam long id) {
 		ModelAndView mav = new ModelAndView("edit_product");
 		Product product = productService.get(id);
-		mav.addObject("customer", product);
+		mav.addObject("product", product);
 		
 		return mav;
 	}
