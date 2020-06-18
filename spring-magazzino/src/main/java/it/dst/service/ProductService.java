@@ -30,9 +30,8 @@ public class ProductService {
 	public void delete(Long id) {
 		repos.deleteById(id);
 	}
+	
 
-	public List<Product> search(String keyword) {
-		return repos.search(keyword);
-	}
+	
 
 }
